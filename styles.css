@@ -31,6 +31,16 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+  transition: all 0.4s easy-in-out;
+  transform: translateX(0);
+}
+.overlay-slide-left {
+  transition: all 0.8s easy-in-out;
+  transform: translateX(-100vw);
 }
 
 /* Nav Menu Items */
@@ -112,8 +122,8 @@ nav li:nth-of-type(5) {
 .bar2,
 .bar3 {
   width: 35px;
-  height: 5px;
-  background-color: var(--navColor1);
+  height: 3px;
+  background-color: var(--primaryColor);
   margin: 6px 0;
   transition: 0.4s;
 }
